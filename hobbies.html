@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal homepage of Mahim Muntasir, Computer Science student at Brac University." />
+    
+    <title>Hobbies &amp; Activities | Mahim Muntasir</title>
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="style.css?v=2" />
+
+    <!-- Custom inline styles -->
+    <style type="text/css">
+        .highlight-text {
+            color: #0284c7;
+            font-weight: 600;
+        }
+        .table-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            background: #e0f2fe;
+            color: #0369a1;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="header-wrapper" class="header-nav">
+        <div class="container nav-wrapper">
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><button type="button" id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main layout -->
+    <div class="container animate-fade">
+
+        <!-- Hobbies Details -->
+        <div class="section-block" id="hobbies">
+            <h2 class="section-title">Hobbies &amp; Activities Details</h2>
+
+
+
+            <div class="categories-grid">
+                <!-- Movies -->
+                <div class="cat-box" id="movies" style="grid-column: 1 / -1;">
+                    <h3>Watching Movies &mdash; Top 10 Favorite Movies</h3>
+                    <ol class="movie-list">
+                        <li>Forrest Gump</li>
+                        <li>The Green Mile</li>
+                        <li>3 Idiots</li>
+                        <li>The Shawshank Redemption</li>
+                        <li>Jojo Rabbit</li>
+                        <li>Crazy, Stupid, Love</li>
+                        <li>Interstellar</li>
+                        <li>Secondhand Lions</li>
+                        <li>The Adventures of Tintin</li>
+                        <li>Avengers: Endgame</li>
+                    </ol>
+                </div>
+                <div class="cat-box" id="travel">
+                    <h3>Traveling</h3>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">I love visiting new places, learning about different cultures, and seeing historic sites.</p>
+                </div>
+                <div class="cat-box" id="gaming">
+                    <h3>Playing Video Games</h3>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">I enjoy playing RPGs with good storylines and relaxing with some multiplayer games on weekends.</p>
+                </div>
+                <div class="cat-box" id="basketball">
+                    <h3>Basketball</h3>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">I try to play basketball regularly to stay active and hang out with friends.</p>
+                </div>
+                <div class="cat-box" id="gym">
+                    <h3>Going to Gym</h3>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">Going to the gym a few times a week to stay fit and healthy.</p>
+                </div>
+                <div class="cat-box" id="running">
+                    <h3>Running</h3>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">I like to go for morning jogs to clear my head and start the day right.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <div id="footer-wrapper" class="footer-block">
+            <p>&copy; 2026 Mahim Muntasir.</p>
+            
+            <div class="js-info-container">
+                <div><strong>Page Location:</strong> <span id="page-location">Loading...</span></div>
+                <div><strong>Last Modified:</strong> <span id="last-modified">Loading...</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("page-location").textContent = window.location.href;
+            document.getElementById("last-modified").textContent = document.lastModified;
+        });
+
+        function toggleTheme() {
+            var body = document.body;
+            var btn = document.getElementById("theme-toggle");
+            if (body.className.indexOf("dark-mode") !== -1) {
+                body.className = body.className.replace("dark-mode", "").trim();
+                btn.textContent = "🌙 Dark Mode";
+            } else {
+                body.className = (body.className + " dark-mode").trim();
+                btn.textContent = "☀️ Light Mode";
+            }
+        }
+    /* ]]> */
+    </script>
+</body>
+</html>

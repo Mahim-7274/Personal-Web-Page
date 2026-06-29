@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Personal homepage of Mahim Muntasir, Computer Science student at Brac University." />
+
+    <title>Mahim Muntasir | Personal Homepage</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="style.css?v=2" />
+
+    <!-- Custom inline styles -->
+    <style type="text/css">
+        .highlight-text {
+            color: #0284c7;
+            font-weight: 600;
+        }
+
+        .table-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            background: #e0f2fe;
+            color: #0369a1;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="header-wrapper" class="header-nav">
+        <div class="container nav-wrapper">
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#coursework">Coursework</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><button type="button" id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark
+                            Mode</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container animate-fade">
+        <!-- Hero section -->
+        <div class="profile-header" id="home">
+
+            <div class="profile-column-left">
+                <img src="assets/profile.jpg" alt="Mahim Muntasir Profile Picture" class="profile-img" />
+
+                <div class="classy-quote-box">
+                    <blockquote>
+
+                        <p>&quot;Loyalty is a two-way street. If I'm asking for it from you, then you're getting it from
+                            me&quot;</p>
+
+                    </blockquote>
+                    <cite>&mdash; Harvey Specter</cite>
+                </div>
+            </div>
+
+            <!-- Intro text -->
+            <div class="profile-bio">
+                <h1>Mahim Muntasir</h1>
+                <div class="profile-subtitle">Computer Science Undergraduate Student</div>
+
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="section-block" id="about">
+            <h2 class="section-title">About Me &amp; Personal Info</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Currently, I am an undergraduate student in <strong>Computer Science</strong> at <a
+                            href="https://www.bracu.ac.bd" onclick="window.open(this.href); return false;">BRAC
+                            University</a>, focused on building robust <em>full-stack applications</em> and exploring
+                        <em>systems-level architecture</em>. Alongside academic pursuits, passionate about maintaining a
+                        disciplined fitness routine and exploring diverse cultures through travel.
+                    </p>
+
+                </div>
+                <div class="info-box">
+                    <h3>Contact Information</h3>
+                    <table class="info-table" summary="Mahim Muntasir Personal Contact Information">
+                        <tr>
+                            <td class="label">Name:</td>
+                            <td class="value">Mahim Muntasir</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Gmail:</td>
+                            <td class="value"><a
+                                    href="mailto:mahim.muntasir@g.bracu.ac.bd">mahim.muntasir@g.bracu.ac.bd</a></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Phone:</td>
+                            <td class="value">01635018621</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Institution:</td>
+                            <td class="value"><a href="https://www.bracu.ac.bd"
+                                    onclick="window.open(this.href); return false;">Brac University</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section-block" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">B.Sc. in Computer Science &amp; Engineering</span>
+                        <span class="edu-year">Enrolled / Ongoing</span>
+                    </div>
+                    <div class="edu-institution"><a href="https://www.bracu.ac.bd"
+                            onclick="window.open(this.href); return false;"
+                            style="color:var(--accent-color); text-decoration:none;">BRAC University</a></div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">Higher Secondary Certificate (HSC)</span>
+                        <span class="edu-year">Passed in 2021</span>
+                    </div>
+                    <div class="edu-institution">Cantonment College &ndash; Jashore</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">Secondary School Certificate (SSC)</span>
+                        <span class="edu-year">Passed in 2019</span>
+                    </div>
+                    <div class="edu-institution">Jessore Zilla School</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-block" id="coursework">
+            <h2 class="section-title">Project Overview</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1rem;">Some of the recent projects I've
+                built.</p>
+
+            <div class="table-responsive">
+                <table class="custom-table" summary="Overview of personal projects built by Mahim Muntasir">
+                    <thead>
+                        <tr>
+                            <th scope="col">Project</th>
+                            <th scope="col">Tech Stack</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4"
+                                style="background-color: var(--table-stripe); font-weight: 700; text-align: center; padding: 0.75rem;">
+                                Academic &amp; Personal Projects
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">Gym Management System</td>
+                            <td>MongoDB, Express.js, React, Node.js</td>
+                            <td>A full-stack web application to manage gym memberships, trainer schedules, and monthly
+                                fee payments. Features member registration, role-based dashboards for admins and
+                                trainers, and real-time attendance tracking.</td>
+                            <td><span class="table-badge">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">Lost &amp; Found System</td>
+                            <td>MySQL, HTML, CSS</td>
+                            <td>A database-driven web application for reporting and searching lost or found items on a
+                                university campus. Users can post item descriptions, upload photos, and contact finders
+                                directly through the platform.</td>
+                            <td><span class="table-badge">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Skills -->
+        <div class="section-block" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-badge" style="border-left: 3px solid #306998;">Python</div>
+                <div class="skill-badge" style="border-left: 3px solid #e34c26;">HTML</div>
+                <div class="skill-badge" style="border-left: 3px solid #264de4;">CSS</div>
+                <div class="skill-badge" style="border-left: 3px solid #61dbfb;">MERN Stack</div>
+            </div>
+        </div>
+
+        <!-- Hobbies overview -->
+        <div class="section-block" id="hobbies">
+            <h2 class="section-title">Hobbies &amp; Activities</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem;">When I'm not coding, I enjoy
+                sports, movies, and traveling.</p>
+            <a href="hobbies.html" class="ext-btn"
+                style="display:inline-block; font-size:0.95rem; text-decoration:none;">View my Hobbies &amp; Activities
+                &rarr;</a>
+        </div>
+
+        <!-- Links -->
+        <div class="section-block" id="links">
+            <h2 class="section-title">Categorized Links &amp; Resources</h2>
+            <div class="categories-grid">
+                <div class="cat-box">
+                    <h3>Hobbies Links</h3>
+                    <div class="tag-list">
+                        <a href="hobbies.html#movies" class="tag-link">Watching Movies</a>
+                        <a href="hobbies.html#travel" class="tag-link">Traveling</a>
+                        <a href="hobbies.html#gaming" class="tag-link">Playing Video Games</a>
+                    </div>
+                </div>
+                <div class="cat-box">
+                    <h3>Sports Links</h3>
+                    <div class="tag-list">
+                        <a href="hobbies.html#basketball" class="tag-link">Basketball</a>
+                    </div>
+                </div>
+                <div class="cat-box">
+                    <h3>Extracurricular Activities Links</h3>
+                    <div class="tag-list">
+                        <a href="hobbies.html#gym" class="tag-link">Going to Gym</a>
+                        <a href="hobbies.html#running" class="tag-link">Running</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ext-box">
+                <h3>External Links &amp; Course Resources</h3>
+                <div class="ext-links">
+                    <a href="https://www.bracu.ac.bd" onclick="window.open(this.href); return false;"
+                        class="ext-btn">BRAC University &rarr;</a>
+                    <a href="https://discord.gg/XhPXsStmt" onclick="window.open(this.href); return false;"
+                        class="ext-btn">CSE 391 Discord &rarr;</a>
+                    <a href="https://github.com/Mahim-7274" onclick="window.open(this.href); return false;"
+                        class="ext-btn">GitHub Profile &rarr;</a>
+                    <a href="https://www.linkedin.com/in/mahim-muntasir-0b33a9241/"
+                        onclick="window.open(this.href); return false;" class="ext-btn">LinkedIn Profile &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom image -->
+        <div class="section-block closing-img-block">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                alt="Desk setup" class="closing-img" style="max-width: 400px; max-height: 240px;" />
+            <p class="closing-img-caption"><em>Just a clean desk setup.</em></p>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper" class="footer-block">
+            <p>&copy; 2026 Mahim Muntasir.</p>
+
+            <div class="js-info-container">
+                <div><strong>Page Location:</strong> <span id="page-location">Loading...</span></div>
+                <div><strong>Last Modified:</strong> <span id="last-modified">Loading...</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("page-location").textContent = window.location.href;
+            document.getElementById("last-modified").textContent = document.lastModified;
+        });
+
+        function toggleTheme() {
+            var body = document.body;
+            var btn = document.getElementById("theme-toggle");
+            if (body.className.indexOf("dark-mode") !== -1) {
+                body.className = body.className.replace("dark-mode", "").trim();
+                btn.textContent = "🌙 Dark Mode";
+            } else {
+                body.className = (body.className + " dark-mode").trim();
+                btn.textContent = "☀️ Light Mode";
+            }
+        }
+        /* ]]> */
+    </script>
+</body>
+
+</html>
